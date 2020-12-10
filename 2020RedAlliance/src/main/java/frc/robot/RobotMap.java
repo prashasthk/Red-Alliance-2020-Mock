@@ -27,5 +27,8 @@ public class RobotMap {
   public static int rightDrivePort = 1;
 
   public static int armJoystick = 0;
+  public static int triggers = 2;
+  public static int inButton = 5;
+  public static int outButton = 6;
 
 }
