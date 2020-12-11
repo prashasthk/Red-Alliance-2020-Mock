@@ -22,6 +22,7 @@ public class OI {
 
   public OI() {
     m_drive = DriveTrain.getInstance();
+    m_shoot = BallShooter.getInstance();
     arcJoy = new Joystick(RobotMap.armJoystick);
     //m_shoot = BallShooter.getInstance();
   }

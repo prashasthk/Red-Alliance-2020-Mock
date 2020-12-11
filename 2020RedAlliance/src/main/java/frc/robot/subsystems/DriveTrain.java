@@ -9,6 +9,7 @@ package frc.robot.subsystems;
 
 import edu.wpi.first.wpilibj.command.Subsystem;
 import frc.robot.RobotMap;
+// import com.ctre.phoenix.motorcontrol.FeedbackDevice;
 import frc.robot.OI;
 import edu.wpi.first.wpilibj.PWMTalonSRX;
 
@@ -19,6 +20,8 @@ public class DriveTrain extends Subsystem {
 
   private PWMTalonSRX left = new PWMTalonSRX(RobotMap.leftDrivePort);
   private PWMTalonSRX right = new PWMTalonSRX(RobotMap.rightDrivePort);
+  // private PWMTalonSRX leftFollow = new PWMTalonSRX(2);
+  // private PWMTalonSRX rightFollow = new PWMTalonSRX(3);
   private static DriveTrain drive;
 
   private double leftPower, rightPower;
@@ -38,6 +41,11 @@ public class DriveTrain extends Subsystem {
   public void tankDrive(double leftPow, double rightPow) {
     left.set(leftPow);
     right.set(rightPow);
+    // leftFollow.set(ControlMode.Follower, 0);
+    // rightFollow.set(ControlMode.Follower, 1);
+
+
+
   }
 
   // Put methods for controlling this subsystem
